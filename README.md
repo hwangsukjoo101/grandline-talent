@@ -2,12 +2,29 @@
 
 ## [Open the Grandline Talent website ↗](https://hwangsukjoo101.github.io/grandline-talent/)
 
-Click the link above to visit the live website. No login is required.
+React JavaScript website built with Vite and Tailwind CSS. No login is required to visit.
 
-This repository contains the website’s TypeScript and Tailwind CSS source code. GitHub displays this README as documentation; the interactive website runs at the link above.
+## Local development
 
-## Development
+Install Node.js 22 or newer and pnpm. Then:
 
-Install dependencies with `pnpm install`, then run `pnpm dev`.
+```sh
+git clone https://github.com/hwangsukjoo101/grandline-talent.git
+cd grandline-talent
+pnpm install
+pnpm dev
+```
 
-To rebuild the published website, run `pnpm build` and commit the updated `docs` folder. GitHub Pages publishes from `main` → `/docs`.
+Open the local URL printed by Vite. React Fast Refresh updates the page while you edit.
+
+## Build and publish
+
+Run `pnpm build` to build the website into `docs/`. Run `pnpm preview` to preview that build locally. Commit source and the rebuilt `docs/` folder to `main`; GitHub Pages publishes from `main → /docs`.
+
+## Source
+
+- `src/main.jsx`: React root
+- `src/App.jsx`: presentation, contact dropdown, challenge filtering and practice dialog
+- `src/challenges.js`: challenge data
+- `src/style.css`: Tailwind import and responsive deep navy styling
+- `vite.config.js`: React, Tailwind, and GitHub Pages build configuration
